@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('fondo.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Dancing Script', sans-serif;
+
+}
+
+header, footer {
+    background-color: #cd20f8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-size: 80px; /* Ajusta el tamaño según lo necesites */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Separa el título y el logo */
+    align-items: center; /* Alinea verticalmente */
+    background-color: rgba(237, 13, 237, 0.805);
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 150px; /* Tamaño pequeño */
+    height: auto;
+    position: absolute;
+    top: 40px; /* Ajusta la distancia desde arriba */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+#productos, #reseñas, #contacto {
+    padding: 40px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.reseña {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+      display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center;
+        width: 100%;
+    max-width: 400px; /* Ajusta según el diseño */
+}
+
+.reseña img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+button {
+    background-color: #9a019a; /* Color morado */
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #c53ac5; /* Un tono más claro al pasar el mouse */
+}
+
+@media (max-width: 600px) {
+    .reseñas-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.reseña p {
+    font-size: 20px;
+}
+h2 {
+    font-size: 40px; /* Cambia el número según lo necesites */
+}
